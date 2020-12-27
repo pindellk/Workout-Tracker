@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 
 // Point our server to specific routes
-// require("./routes/apiRoutes")(app);
+require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // Server listener
