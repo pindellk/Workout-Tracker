@@ -3,13 +3,15 @@ const e = require("express");
 const mongoose = require("mongoose");
 
 // Import model methods
-const { Resistance, Cardio, Workout } = require("../models");
+const { Exercise, Resistance, Cardio, Workout } = require("../models");
 
 // Mongoose connection
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/workout",
-    { useNewUrlParser: true }
-);
+    process.env.MONGODB_URI || "mongodb://localhost/workout", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+});
 
 module.exports = (app) => {
     app.post("/api/workouts", (req, res) => {
@@ -24,14 +26,18 @@ module.exports = (app) => {
 
     app.put("/api/workouts/:id", (req, res) => {
         const id = req.params.id;
-        const exercises = req.params.exercises;
-        console.log(JSON.stringify(req.params.exercises));
-        Workout.findOneAndUpdate(id, req.body, function (err, workout) {
-            if (err) {
-                console.log(err)
-            }
-            return res.json(workout);
-        });
+        const exercises = req.body;
+
+        Workout.findOneAndUpdate(
+            id,
+            { $push: { exercises: exercises } },
+            { new: true },
+            function (err, workout) {
+                if (err) {
+                    console.log(err)
+                }
+                return res.json(workout);
+            });
     });
 
     app.get("/api/workouts", (req, res) => {

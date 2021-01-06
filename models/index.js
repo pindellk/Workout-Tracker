@@ -46,7 +46,7 @@ const cardioSchema = new mongoose.Schema({
 
 const Cardio = Exercise.discriminator("Cardio", cardioSchema);
 
-const workoutSchema = new mongoose.Schema ({
+const workoutSchema = new mongoose.Schema({
     day: {
         type: Date,
         required: true
@@ -57,6 +57,7 @@ const workoutSchema = new mongoose.Schema ({
 const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = {
+    Exercise,
     Resistance,
     Cardio,
     Workout
