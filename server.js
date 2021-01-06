@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 
+// Set up port for deployment
 const PORT = process.env.PORT || 5000;
 
 // Body parser middleware express app to handle data
