@@ -34,7 +34,7 @@ router.put("/api/workouts/:id", (req, res) => {
   const id = req.params.id;
   const exercises = req.body;
 
-  db.Workout.findOneAndUpdate(
+  db.Workout.findByIdAndUpdate(
     id,
     {
       $inc: { totalDuration: +req.body.duration },
