@@ -1,49 +1,60 @@
 # Workout-Tracker
+Enter daily workouts and track them in a dashboard with this application. 
 
-## Description
+---
+<br>
 
-View, create, and track daily workouts.
+[LIVE ON HEROKU](X)
 
-![Image](./public/assets/_____.png)
+### Table of Contents
+- [Screen Shots](#screen-shots)
+- [User Story](#user-story)
+- [Business Context](#business-context)
+- [Technologies](#technologies)
+- [License](#license)
+- [Author Info](#author-info)
 
-## Table of Contents 
+---
+<br>
 
-* [Installation](#installation)
+### Screen Shots
 
-* [Usage](#usage)
+![Main](X.png)
 
-* [License](#license)
+### User Story
+As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
-* [Contributing](#contributing)
+---
+<br>
 
-* [Tests](#tests)
+### Business Context
 
-* [Questions](#questions)
+A consumer will reach their fitness goals more quickly when they track their workout progress.
 
-## Installation
+---
+<br>
 
-X
+### Technologies
+- HTML5
+- CSS3
+- JavaScript
+- Node.js
+- Express
+- MongoDB
+- Mongoose
 
-```
+---
+<br>
 
-```
+### License
 
-## Usage
+None
 
-This app is free to use for anyone. Link to deployed application: _____________
+---
+<br />
 
-## License
+### Author Info
 
-This project is unlicensed.
-  
-## Contributing
+Feel free to reach out with any questions or suggestions for improvement.
+- Linkedin - [Katie Pindell](https://www.linkedin.com/in/katie-pindell-6ba25364/)
 
-Feel free to reach out about bugs or issues.
-
-## Tests
-
-There are no tests for this app.
-
-## Questions
-
-If you have any questions about the repo, open an issue or contact me directly at pindellk@protonmail.com. You can find more of my work at [pindellk](https://github.com/pindellk/).
