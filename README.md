@@ -4,7 +4,7 @@ Enter daily workouts and track your data in a dashboard with this application.
 ---
 <br>
 
-[LIVE ON HEROKU](X)
+[LIVE ON HEROKU](https://peaceful-bayou-73526.herokuapp.com/)
 
 ### Table of Contents
 - [Screen Shots](#screen-shots)
