@@ -2,8 +2,6 @@
 Enter daily workouts and track your data in a dashboard with this application. 
 
 ---
-<br>
-
 [LIVE ON HEROKU](https://peaceful-bayou-73526.herokuapp.com/)
 
 ### Table of Contents
@@ -15,7 +13,6 @@ Enter daily workouts and track your data in a dashboard with this application.
 - [Author Info](#author-info)
 
 ---
-<br>
 
 ### Screen Shots
 
@@ -33,7 +30,6 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 A consumer will reach their fitness goals more quickly when they track their workout progress.
 
 ---
-<br>
 
 ### Technologies
 - HTML5
@@ -45,14 +41,12 @@ A consumer will reach their fitness goals more quickly when they track their wor
 - Mongoose
 
 ---
-<br>
 
 ### License
 
 None
 
 ---
-<br />
 
 ### Author Info
 
